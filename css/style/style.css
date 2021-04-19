@@ -274,6 +274,10 @@ p {
   }
 }
 
+button {
+  cursor: pointer;
+}
+
 .cta {
   font-family: "Averta-Bold";
   font-size: 1.8rem;
@@ -281,7 +285,6 @@ p {
   height: 5.2rem;
   background: transparent;
   text-transform: capitalize;
-  cursor: pointer;
   z-index: 1;
   transition: all 0.2s linear;
 }

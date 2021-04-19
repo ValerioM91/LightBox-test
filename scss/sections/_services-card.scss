@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: -14rem;
-  // padding-bottom: 10rem;
   flex-wrap: wrap;
   @include respond(tab-port) {
     flex-direction: column;
@@ -14,7 +13,6 @@
 
 .services-card {
   max-width: 34.6rem;
-  // height: 38.6rem;
   padding: 5rem 3rem;
   text-align: center;
   box-shadow: $box-shadow-1;
