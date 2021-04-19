@@ -534,7 +534,7 @@ p {
   background-position: bottom;
   background-size: cover;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 37.5em) {
   .header {
     background-image: url(../../images/hero-mobile.jpg);
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 85%);
@@ -894,18 +894,8 @@ p {
   transform: translateY(-3px);
 }
 .section-blog .social-card .social-links .social-icon {
-  height: 25px;
-  width: 25px;
-}
-.section-blog .social-card .social-links .social-icon-fill {
   height: 40px;
   width: 40px;
-}
-.section-blog .social-card .social-links .bg-white {
-  padding: 0.8rem;
-  height: 4rem;
-  width: 4rem;
-  background: #fff;
 }
 
 .form-section-bg {
