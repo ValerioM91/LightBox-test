@@ -536,10 +536,10 @@ button {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 80%);
   background-position: bottom;
   background-size: cover;
+  background-position: 47% 100%;
 }
 @media only screen and (max-width: 37.5em) {
   .header {
-    background-image: url(../../images/hero-mobile.jpg);
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 85%);
   }
 }
