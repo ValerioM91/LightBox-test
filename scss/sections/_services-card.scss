@@ -34,6 +34,9 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    img {
+      height: 5rem;
+    }
 
     @include respond(phone) {
       height: 8.5rem;
