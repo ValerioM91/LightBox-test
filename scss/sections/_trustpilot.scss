@@ -1,0 +1,21 @@
+.section-trustpilot {
+  .desktop-placeholder {
+    display: block;
+    width: 100%;
+  }
+  .mobile-placeholder {
+    display: none;
+  }
+
+  @include respond(tab-port) {
+    .desktop-placeholder {
+      display: none;
+    }
+    .mobile-placeholder {
+      display: block;
+      width: 100%;
+      max-width: 50rem;
+      margin: 0 auto;
+    }
+  }
+}

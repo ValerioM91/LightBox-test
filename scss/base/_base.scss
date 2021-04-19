@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  color: $color-black;
+}
+
+.section {
+  padding: 8rem 0;
+  @include respond(tab-port) {
+    padding: 4rem 0;
+  }
+}
+
+.section-center {
+  max-width: $max-width;
+  width: 90vw;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    width: 80vw;
+  }
+}

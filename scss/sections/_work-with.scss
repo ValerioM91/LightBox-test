@@ -1,0 +1,29 @@
+.section-work-with {
+  & .brands {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 8rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+
+    img {
+      width: 100%;
+    }
+
+    .mc-donalds {
+      width: 90%;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 5rem;
+      margin-bottom: 0;
+
+      .mc-donalds,
+      .land-rover {
+        display: none;
+      }
+    }
+  }
+}

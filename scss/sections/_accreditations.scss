@@ -1,0 +1,21 @@
+.section-accreditations-bg {
+  background: $color-grey-light-1;
+  padding: 10rem 0;
+}
+
+.section-accreditations {
+  & .img-container {
+    display: flex;
+    justify-content: space-around;
+    img {
+      height: 12rem;
+    }
+    @include respond(phone) {
+      flex-wrap: wrap;
+      img {
+        height: 10rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

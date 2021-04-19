@@ -1,0 +1,29 @@
+.section-case-studies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12rem;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-card {
+    & .img-container {
+      width: 100%;
+      overflow: hidden;
+      clip-path: polygon(0 10%, 100% 20%, 100% 100%, 0 100%);
+    }
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .case-study-card-2 {
+    padding-top: 15rem;
+
+    @include respond(tab-port) {
+      padding-top: 0;
+    }
+  }
+}

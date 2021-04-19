@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Averta-Bold';
+  src: url(../../fonts/Averta-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Averta-Regular';
+  src: url(../../fonts/Averta-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'DMSans-Regular';
+  src: url(../../fonts/DMSans-Regular.ttf);
+}
+
+body {
+  font-family: $main-font-regular, 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.heading-1 {
+  font-size: 6rem;
+  color: $color-white;
+  font-family: $main-font-bold;
+  text-align: center;
+
+  & span {
+    color: $color-primary;
+  }
+}
+
+.heading-2 {
+  font-size: 5rem;
+  color: $color-white;
+  font-family: $main-font-bold;
+}
+
+.heading-3 {
+  font-size: 4rem;
+  color: $color-black;
+  font-family: $main-font-bold;
+}
+
+.heading-4 {
+  font-size: 3rem;
+  color: $color-black;
+  font-family: $main-font-bold;
+}
+
+.heading-5 {
+  font-size: 2.2rem;
+  color: $color-black;
+  font-family: $main-font-bold;
+  text-align: center;
+}
+
+.heading-6--black {
+  font-size: 2rem;
+  font-family: $main-font-bold;
+  color: $color-black;
+}
+
+.heading-6--white {
+  font-size: 2rem;
+  color: $color-white;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-primary;
+}
+
+.heading-6--blue {
+  font-size: 1.8rem;
+  color: $color-secondary;
+  font-family: $main-font-bold;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: $main-font-regular;
+}
+
+.inline-link {
+  color: $color-secondary-light;
+  border-bottom: 1px solid;
+}
+
+@include respond(tab-port) {
+  .heading-1 {
+    font-size: 3rem;
+  }
+  .heading-2 {
+    font-size: 3rem;
+  }
+  .heading-3 {
+    font-size: 2.6rem;
+  }
+  .heading-4 {
+    font-size: 1.9rem;
+  }
+  .heading-5 {
+    font-size: 2rem;
+  }
+  .heading-6 {
+    font-size: 1.8rem;
+    font-family: $main-font-regular;
+  }
+  .heading-6--black {
+    font-size: 1.8rem;
+  }
+}

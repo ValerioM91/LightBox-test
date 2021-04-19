@@ -1,0 +1,91 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 6rem 4rem 4rem 4rem;
+
+  .logo {
+    width: 16rem;
+  }
+
+  .links-list {
+    font-size: 1.8rem;
+    font-family: 'Averta-Bold';
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+    .link:not(:last-child) {
+      margin-right: 6.7rem;
+    }
+
+    .link--a {
+      border-bottom: 2px solid transparent;
+      padding-bottom: 3px;
+      transition: $transition;
+    }
+    .link--a:hover {
+      border-bottom: 2px solid $color-white;
+    }
+  }
+
+  .open-sidebar {
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 1rem 0 1rem 2rem;
+  }
+
+  .services-link {
+    position: relative;
+    padding: 2.5rem 0;
+  }
+  .services-link:hover .services-list {
+    display: block;
+  }
+
+  .services-list {
+    display: none;
+    position: absolute;
+    top: calc(100%);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    text-align: center;
+    list-style: none;
+    background: $color-white;
+    transition: $transition;
+
+    & li {
+      padding: 1.5rem 3rem;
+      font-size: 1.7rem;
+      color: $color-black;
+      transition: $transition;
+      text-transform: capitalize;
+
+      &:hover {
+        background-color: $color-primary;
+        color: white;
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    & .logo {
+      width: 11rem;
+    }
+    .links-list,
+    .nav--contact {
+      display: none;
+    }
+    .open-sidebar {
+      display: block;
+      z-index: 10;
+    }
+  }
+}

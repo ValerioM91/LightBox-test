@@ -1,0 +1,98 @@
+.form-section-bg {
+  background: $color-grey-light-1;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  //   transform: skewY(5deg);
+  //   & > * {
+  //     transform: skewY(-5deg);
+  //  }
+}
+
+.form-section {
+  padding-top: 15rem;
+  display: grid;
+  column-gap: 6rem;
+  grid-template-columns: 2fr 3fr;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+
+    input,
+    textarea {
+      border: 2px solid $color-black;
+      font-family: inherit;
+      margin-bottom: 3rem;
+      font-size: 1.8rem;
+      padding: 2rem;
+    }
+    .input--toggle-grid {
+      @include respond(phone) {
+        grid-column: 1 /-1;
+      }
+    }
+    textarea,
+    .company,
+    p,
+    .checkbox {
+      grid-column: 1 /-1;
+    }
+    input#check {
+      display: block;
+      box-sizing: border-box;
+      z-index: 1;
+      opacity: 0;
+      height: 30px;
+      width: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    .checkbox {
+      position: relative;
+      display: grid;
+      grid-template-columns: 30px auto;
+      align-items: center;
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+
+      & label {
+        margin-left: 2rem;
+      }
+    }
+    .checkbox input#check:checked ~ .checkmark {
+      background-color: $color-primary;
+    }
+
+    .checkmark {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      background-color: transparent;
+      border: 2px solid $color-black;
+    }
+    .checkmark:after {
+      content: '\2713';
+      color: $color-white;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .checkbox input#check:checked ~ .checkmark:after {
+      display: flex;
+    }
+
+    .cta--black {
+      grid-column: 2/3;
+      margin-left: auto;
+    }
+  }
+}

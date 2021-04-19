@@ -1,0 +1,23 @@
+{
+  "name": "lightbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss css/style/style.css",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver sass",
+    "prefix:css": "postcss -u autoprefixer -b `last 10 versions` css/style/style.css -o css/style/style.prefix.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1"
+  }
+}

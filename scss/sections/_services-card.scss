@@ -1,0 +1,57 @@
+.section-services-cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -14rem;
+  // padding-bottom: 10rem;
+  flex-wrap: wrap;
+  @include respond(tab-port) {
+    flex-direction: column;
+    padding-bottom: 5rem;
+    margin-top: 0;
+    align-items: center;
+  }
+}
+
+.services-card {
+  max-width: 34.6rem;
+  // height: 38.6rem;
+  padding: 5rem 3rem;
+  text-align: center;
+  box-shadow: $box-shadow-1;
+  z-index: 3;
+  background-color: $color-white;
+  color: $color-black;
+  margin-bottom: 3rem;
+
+  @include respond(tab-port) {
+    align-items: center;
+  }
+
+  .icon {
+    background-color: $color-primary;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+      height: 8.5rem;
+      width: 8.5rem;
+      img {
+        height: 4rem;
+      }
+    }
+  }
+
+  & h5 {
+    max-width: 20rem;
+    margin: auto;
+  }
+
+  p span {
+    font-size: 1.4rem;
+  }
+}

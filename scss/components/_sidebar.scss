@@ -1,0 +1,94 @@
+.sidebar {
+  background: $color-secondary;
+  background-image: url(../../svg/sidebar-bg-svg.png);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 99;
+  color: $color-white;
+  transition: $transition;
+
+  &.active {
+    left: 0;
+  }
+
+  &-center {
+    padding: 4rem 3.5rem;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    .logo {
+      width: 11rem;
+    }
+
+    .close-sidebar {
+      background: transparent;
+      border: none;
+      outline: none;
+      width: 5rem;
+      img {
+        width: inherit;
+      }
+    }
+  }
+
+  & .links {
+    list-style: none;
+    font-size: 4rem;
+    font-family: $main-font-bold;
+    margin-bottom: 4rem;
+  }
+
+  & .link {
+    margin-bottom: 2rem;
+  }
+
+  & .toggle-services {
+    background: transparent;
+    border: none;
+    outline: none;
+    transition: $transition;
+    width: 5rem;
+    text-align: center;
+    img {
+      width: 3rem;
+    }
+
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+
+  & .services-container {
+    height: 0px;
+    overflow: hidden;
+    transition: $transition;
+  }
+
+  & .services-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & .sidebar-services-list {
+    list-style: none;
+    font-size: 2.6rem;
+    font-family: $main-font-regular;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    & li {
+      margin-bottom: 2rem;
+    }
+  }
+}

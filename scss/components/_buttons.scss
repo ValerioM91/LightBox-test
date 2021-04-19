@@ -1,0 +1,50 @@
+.cta {
+  font-family: 'Averta-Bold';
+  font-size: 1.8rem;
+  width: 15.8rem;
+  height: 5.2rem;
+  background: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  z-index: 1;
+  transition: $transition;
+}
+
+.cta--white {
+  color: $color-white;
+  border: 2px solid $color-white;
+  position: relative;
+  transition: $transition;
+  &:hover {
+    color: $color-primary;
+    background-color: $color-white;
+    &.after-blue {
+      color: $color-secondary;
+    }
+  }
+}
+
+.cta--black {
+  color: $color-black;
+  border: 2px solid $color-black;
+}
+
+.cta--primary {
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  position: relative;
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+}
+
+.cta--blue {
+  color: $color-secondary;
+  border: 2px solid $color-secondary;
+  position: relative;
+  &:hover {
+    color: $color-white;
+    background-color: $color-secondary;
+  }
+}

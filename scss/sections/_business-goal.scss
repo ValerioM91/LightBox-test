@@ -1,0 +1,36 @@
+.section-business-goal-bg {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.34),
+      rgba($color-black, 0.34)
+    ),
+    url(../../images/business.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @include respond(phone) {
+    background-image: url(../../images/business-mobile.jpg);
+    background-position: 0% 0%;
+  }
+}
+
+.section-business-goal {
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+  max-width: 50rem;
+
+  @include respond(phone) {
+    padding-top: 45%;
+    padding-bottom: 10rem;
+  }
+  p {
+    font-family: $main-font-bold;
+    line-height: 150%;
+    color: $color-white;
+
+    @include respond(tab-port) {
+      font-family: $main-font-regular;
+      line-height: 130%;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// COLORS
+$color-primary: #00d36c;
+$color-primary-light: #7ed56f;
+
+$color-secondary: #2e89fc;
+$color-secondary-light: #009eff;
+
+$color-grey-light-1: #f9f9f9;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #ccc;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #323232;
+
+$main-font-regular: 'Averta-Regular';
+$main-font-bold: 'Averta-Bold';
+
+$transition: all 0.2s linear;
+
+// GRID
+$max-width: 114rem;
+$quote-width: 67rem;
+// $gutter-vertical: 8rem;
+// $gutter-vertical-small: 6rem;
+// $gutter-horizontal: 6rem;
+
+// BOX SHADOWS
+$box-shadow-1: 1rem 1rem 1rem 0.1rem rgba(0, 0, 0, 0.05);
+$box-shadow-15: 0 1.5rem 4rem rgba($color-black, 0.15);
+$box-shadow-4: 0 1.5rem 4rem rgba($color-black, 0.4);

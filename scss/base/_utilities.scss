@@ -1,0 +1,32 @@
+/* prettier-ignore */
+.u-margin-bottom-1r { margin-bottom: 1.5rem !important; }
+/* prettier-ignore */
+.u-margin-bottom-2r { margin-bottom: 2.5rem !important; }
+/* prettier-ignore */
+.u-margin-bottom-4r { margin-bottom: 4rem !important; }
+/* prettier-ignore */
+.u-margin-bottom-8r { margin-bottom: 8rem !important; }
+/* prettier-ignore */
+.u-margin-bottom-12r { margin-bottom: 12rem !important; }
+/* prettier-ignore */
+.text-align-center { text-align: center; }
+/* prettier-ignore */
+.color-black{ color: $color-black; }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+}
