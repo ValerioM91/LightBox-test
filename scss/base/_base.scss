@@ -28,6 +28,6 @@ body {
   margin: 0 auto;
 
   @include respond(tab-port) {
-    width: 80vw;
+    width: 85vw;
   }
 }

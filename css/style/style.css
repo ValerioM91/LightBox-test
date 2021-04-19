@@ -67,7 +67,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .section-center {
-    width: 80vw;
+    width: 85vw;
   }
 }
 
@@ -309,13 +309,13 @@ button {
 }
 
 .cta--primary {
-  color: #00d36c;
-  border: 2px solid #00d36c;
+  color: #00dd82;
+  border: 2px solid #00dd82;
   position: relative;
 }
 .cta--primary:hover {
   color: #fff;
-  background-color: #00d36c;
+  background-color: #00dd82;
 }
 
 .cta--blue {
@@ -851,6 +851,7 @@ button {
   .section-blog .post-card,
 .section-blog .social-card {
     width: 100%;
+    padding: 2rem;
   }
 }
 .section-blog .post-card {
@@ -867,7 +868,7 @@ button {
   text-transform: capitalize;
 }
 .section-blog .social-card {
-  background-color: #00d36c;
+  background-color: #00d877;
 }
 .section-blog .social-card__header {
   height: 50%;
@@ -891,7 +892,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 2rem;
+  margin-right: 1rem;
   border-radius: 50%;
   height: inherit;
   transition: all 0.2s linear;
@@ -902,6 +903,12 @@ button {
 .section-blog .social-card .social-links .social-icon {
   height: 40px;
   width: 40px;
+}
+@media only screen and (max-width: 37.5em) {
+  .section-blog .social-card .social-links .social-icon {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .form-section-bg {

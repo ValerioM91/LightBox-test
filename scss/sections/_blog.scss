@@ -26,6 +26,7 @@ $post-card-width: 37rem;
     max-width: $post-card-width;
     @include respond(phone) {
       width: 100%;
+      padding: 2rem;
     }
   }
 
@@ -40,13 +41,13 @@ $post-card-width: 37rem;
     }
 
     .category {
-      font-family: 'Averta-Bold';
+      font-family: $main-font-bold;
       text-transform: capitalize;
     }
   }
 
   .social-card {
-    background-color: $color-primary;
+    background-color: $color-primary-light;
 
     &__header {
       height: 50%;
@@ -68,7 +69,7 @@ $post-card-width: 37rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 2rem;
+        margin-right: 1rem;
         border-radius: 50%;
         height: inherit;
         transition: $transition;
@@ -81,6 +82,11 @@ $post-card-width: 37rem;
       .social-icon {
         height: 40px;
         width: 40px;
+
+        @include respond(phone) {
+          height: 30px;
+          width: 30px;
+        }
       }
     }
   }
